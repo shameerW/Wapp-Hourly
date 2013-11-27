@@ -1,0 +1,112 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+
+        <EditText
+            android:id="@+id/cityEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/hint"
+            android:textColor="@color/neonG"
+            android:textColorHint="@color/neonG" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/goButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/buttonB"
+            android:text="@string/goButton"
+            android:textColor="@color/neonG"
+            android:textColorHint="@color/buttonB"
+            android:textStyle="bold" 
+            android:padding="10dp"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+
+        <TextView
+            android:id="@+id/descTextView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_span="2"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="@string/midText"
+            android:textColor="@color/cityText"
+            android:textSize="@dimen/text_size"
+            android:textStyle="bold"
+            android:layout_weight="1" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" 
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/cityScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" 
+            android:layout_span="2"
+            android:layout_weight="1">
+
+            <TableLayout
+                android:id="@+id/cityTableScrollView" 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:stretchColumns="yes" >
+            </TableLayout>
+        </ScrollView>
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+        
+         <Button
+             android:id="@+id/deleteCitiesButton"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_span="2"
+             android:layout_weight="1"
+             android:background="@color/buttonB"
+             android:text="@string/deleteButton"
+             android:textColor="@color/neonG" 
+             android:textStyle="bold" 
+             android:padding="10dp"/>
+
+    </TableRow>    
+
+</TableLayout>

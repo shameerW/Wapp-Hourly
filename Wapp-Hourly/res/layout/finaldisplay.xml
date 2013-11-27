@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TableLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/big"
+            android:textColor="@color/neonG"
+            android:textSize="@dimen/text_size_med"
+            android:textStyle="bold" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/weatherTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/weather"
+            android:textColor="@color/cityText"
+            android:textSize="@dimen/text_size_small" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/mainTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/main"
+            android:textColor="@color/egg_shell"
+            android:textSize="@dimen/text_size_small"
+             android:paddingBottom="10dip"
+            android:paddingTop="10dip" />
+
+        <TextView
+            android:id="@+id/descTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/desc"
+            android:textColor="@color/egg_shell"
+            android:textSize="@dimen/text_size_small" 
+             android:paddingBottom="10dip"
+            android:paddingTop="10dip"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/humidityTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/humid"
+            android:textColor="@color/egg_shell"
+            android:textSize="@dimen/text_size_small"
+             android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+             />
+
+        <TextView
+            android:id="@+id/pressureTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/press"
+            android:textColor="@color/egg_shell"
+            android:textSize="@dimen/text_size_small" 
+             android:paddingBottom="10dip"
+            android:paddingTop="10dip"/>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tempTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/temp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/cityText"
+            android:textSize="@dimen/text_size_small" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tempMinTextview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/temp_min"
+            android:textColor="@color/egg_shell"
+            android:textSize="@dimen/text_size_small"
+            />
+
+        <TextView
+            android:id="@+id/tempMaxTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/temp_max"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/egg_shell"
+            android:textSize="@dimen/text_size_small"
+             android:paddingBottom="10dip"
+            android:paddingTop="10dip" />
+
+    </TableRow>
+
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/windTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="@string/wind"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/cityText"
+            android:textSize="@dimen/text_size_small" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/speedTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/speed"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/egg_shell"
+            android:textSize="@dimen/text_size_small"
+             android:paddingBottom="10dip"
+            android:paddingTop="10dip" />
+
+    </TableRow>
+
+    
+
+</TableLayout>

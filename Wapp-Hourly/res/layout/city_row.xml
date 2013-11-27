@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:paddingTop="@dimen/activity_horizontal_margin" >
+
+    <TextView
+        android:id="@+id/cityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_span="2"
+        android:layout_weight="1"
+        android:textColor="@color/cityText"
+        android:textIsSelectable="true" />
+
+    <Button
+        android:id="@+id/historyButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/historyButton"
+        android:textColor="@color/cityText"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/gpsButton"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gpsButton"
+        android:textColor="@color/cityText"
+        android:textStyle="bold" />
+
+</TableRow>
